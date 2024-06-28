@@ -1,0 +1,93 @@
+h1{
+    padding: 20px;
+}
+
+.vacio{
+    background-color: #fff;
+}
+.otros-no-metales{
+    background-color: #0cc;
+    border: 1px solid black;
+}
+.alcalinos {
+    background-color: rgb(164, 117, 230);
+    border: 1px solid black;
+}
+
+.gases-nobles{
+    background-color:rgb(44, 125, 238);
+    border: 1px solid black;
+}
+
+.alcalinotérreos{
+    background-color: rgb(203, 101, 196);
+    border: 1px solid black;
+}
+
+.otros-metales{
+    background-color: rgb(245, 217, 5);
+    border: 1px solid black;
+}
+
+.metales-de-transicion{
+    background-color: rgba(246, 174, 6, 0.996);
+    border: 1px solid black;
+}
+
+.lantanidos{
+    background-color: rgba(212, 127, 22, 0.996);
+    border: 1px solid black;
+}
+
+.actinidos{
+    background-color: rgba(168, 102, 127, 0.996);
+    border: 1px solid black;
+}
+.metaloides{
+    background-color: rgb(180, 241, 81);
+    border: 1px solid black;
+}
+
+.halogenos{
+    background-color:rgb(5, 130, 130);
+    border: 1px solid black;
+}
+
+.columnas {
+    width: 55px;
+    height: 55px;
+    margin: 4px;
+    text-align:center;
+    float: left;
+    display:block;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.columna-leyenda{
+    text-align: center;
+}
+
+.gas{
+    width: 75px;
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+    padding: 0px;
+}
+
+.atomico {
+    font-size: 15px;
+    line-height: 0px;
+}
+
+.simbolo {
+    font-size: 25px;
+    line-height: 0px;
+}
+
+.nombre {
+    font-size: 13px;
+    line-height: 0px;
+}
+

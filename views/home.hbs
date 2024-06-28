@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container-fluid" id="container-titulo"></div>
+      <div class="row">
+        <h1 class="text-primary text-center">Tabla periódica</h1>
+      </div>
+      <div class="row mt-4" id="container-tabla">
+        <div class="col-8 offset-2" id="tablaPeriodica">
+            {{#each elementosTabla}}
+
+                {{#if (ValorIgual Group "Vacio")}}
+
+                    <div id="{{@index}}" class="columnas vacio">
+                        <span>{{Symbol}}</span>
+                    </div>
+
+                {{/if}}
+                {{#if (ValorIgual Group "OtrosNoMetales")}}
+
+                    <div id="{{@index}}" class="columnas otros-no-metales">
+                        <span>{{Symbol}}</span>
+                    </div>
+                    
+                {{/if}}
+
+                {{#if (ValorIgual Group "Alcalinos")}}
+
+                    <div id="{{@index}}" class="columnas alcalinos">
+                        <span>{{Symbol}}</span>
+                    </div>
+                
+                    
+                {{/if}}
+
+                {{#if (ValorIgual Group "GasesNobles")}}
+
+                    <div id="{{@index}}" class="columnas gases-nobles">
+                        <span>{{Symbol}}</span>
+                    </div>
+                    
+                {{/if}}
+                {{#if (ValorIgual Group "Metaloides")}}
+
+                    <div id="{{@index}}" class="columnas metaloides">
+                        <span>{{Symbol}}</span>
+                    </div>
+                    
+                {{/if}}
+                {{#if (ValorIgual Group "Halogenos")}}
+
+                    <div id="{{@index}}" class="columnas halogenos">
+                        <span>{{Symbol}}</span>
+                    </div>
+                    
+                {{/if}}
+                {{#if (ValorIgual Group "OtrosMetales")}}
+
+                    <div id="{{@index}}" class="columnas otros-metales">
+                        <span>{{Symbol}}</span>
+                    </div>
+                    
+                {{/if}}
+                {{#if (ValorIgual Group "Alcalinotérreos")}}
+
+                    <div id="{{@index}}" class="columnas alcalinotérreos">
+                        <span>{{Symbol}}</span>
+                    </div>
+                    
+                {{/if}}
+                {{#if (ValorIgual Group "Metales-de-transicion")}}
+
+                    <div id="{{@index}}" class="columnas metales-de-transicion">
+                        <span>{{Symbol}}</span>
+                    </div>
+                    
+                {{/if}}
+                {{#if (ValorIgual Group "Lantanidos")}}
+
+                    <div id="{{@index}}" class="columnas lantanidos">
+                        <span>{{Symbol}}</span>
+                    </div>
+                    
+                {{/if}}
+                {{#if (ValorIgual Group "Actinidos")}}
+
+                    <div id="{{@index}}" class="columnas actinidos">
+                        <span>{{Symbol}}</span>
+                    </div>
+                    
+                {{/if}}
+            {{/each}}
+        </div>
+      </div>
+      <div class="row mt-4" id="container-leyenda">
+        <div class="col-12 col-md-6 offset-1 columna-leyenda bg-secondary text-light" id="leyenda">
+            Metales
+        </div>
+        <div class="col-6 col-md-4 columna-leyenda bg-secondary text-light">
+            No metales
+        </div>
+        <div class="col-sm-1 offset-1 columna-leyenda text-ligth alcalinos">
+            <div>Alcalinos</div>
+        </div>
+        <div class="col-sm-1 columna-leyenda text-ligth alcalinotérreos">
+            <div>Alcalinotérreos</div>
+        </div>
+        <div class="col-sm-1 columna-leyenda metales-de-transicion">
+            <div>Metales de transición</div>
+        </div>
+        <div class="col-sm-1">
+            <div class="col-lg-12 columna-leyenda lantanidos">Lantanidos</div>
+            <div class="col-lg-12 columna-leyenda actinidos">Actinidos</div>
+        </div>
+        <div class="col-sm-1 columna-leyenda otros-metales">
+            <div>Otros Metales</div>
+        </div>
+        <div class="col-sm-1 columna-leyenda metaloides">
+            <div>Metaloides</div>
+        </div>
+        <div class="col-sm-1 columna-leyenda otros-no-metales">
+            <div>Otros no metales</div>
+        </div>
+        <div class="col-sm-1 columna-leyenda halogenos">
+            <div>Halógenos</div>
+        </div>
+        <div class="col-sm-1 columna-leyenda gases-nobles">
+            <div>Gases nobles</div>
+        </div>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
